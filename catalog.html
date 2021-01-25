@@ -1,42 +1,188 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс catalog</title>
-  </head>
-  <body>
-   <header>
-          <a>
-            <img src="https://via.placeholder.com/159x65" alt="logo nerds">
-          </a>
-          <nav>
-            <ul>
-              <li><a href="index.html">Студия</a></li>
-              <li><a href="#.html">Клиенты</a></li>
-              <li><a href="catalog.html">Магазин</a></li>
-              <li><a href="#.html">Контакты</a></li>
-            </ul>
-            <a href="#.html">Корзина</a>
-          </nav>
-   </header>
-      <main>
-<section>
-  <h1>Магазин готовых шаблонов</h1>
-</section>
-<section>
-  <p><label for="input">CТОИМОСТЬ:</label></p>
-  <input type="range" id="input">
 
-  <fieldset>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс catalog</title>
+</head>
 
+<body>
+  <header>
+    <div class="container">
+      <a>
+        <img src="https://via.placeholder.com/159x65" alt="logo nerds">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="#.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#.html">Контакты</a></li>
+        </ul>
+        <a href="#.html">Корзина</a>
+      </nav>
+    </div>
+  </header>
+  <main>
 
+    <section>
+      <h1>Магазин готовых шаблонов</h1>
+    </section>
+    <div class="container1">
+      <figure>
+        <figcaption>стоимость:</figcaption>
+        <input type="range" min="0" max="25000" value="0">
+        <fieldset>
+          <label for="from">от</label>
+          <input type="text" name="от" id="from" value="0">
+          <label for="to">до</label>
+          <input type="text" name="до" id="to" value="15000">
+        </fieldset>
+        <fieldset>
+          <label>сетка:</label>
+          <input type="radio" value="Адаптивная" id="adaptive" checked>
+          <label for="adaptive">Адаптивная</label><br>
+          <input type="radio" value="Фиксированная" id="fixed">
+          <label for="fixed">Фиксированная</label><br>
+          <input type="radio" value="Резиновая" id="rubber-like">
+          <label for="rubber-like">Резиновая</label>
+        </fieldset>
+        <fieldset>
+          <label>особенности:</label>
+          <input type="checkbox" value="Слайдер" id="slider" checked>
+          <label for="slider">Слайдер</label><br>
+          <input type="checkbox" value="Блок преимуществ" id="block">
+          <label for="block">Блок преимуществ</label><br>
+          <input type="checkbox" value="Новости" id="news" checked>
+          <label for="news">Новости</label><br>
+          <input type="checkbox" value="Галерея" id="gallery">
+          <label for="gallery">Галерея</label><br>
+          <input type="checkbox" value="Корзина" id="basket">
+          <label for="basket">Корзина</label>
+        </fieldset>
+        <input type="submit" value="показать">
+      </figure>
+    </div>
+    <div class="container2">
+      <fieldset>
+        <input type="submit" name="по цене" value="по цене">
+        <input type="submit" name="по типу" value="по типу">
+        <input type="submit" name="по названию" value="по названию">
+        <input type="submit" name="up" value="^">
+        <input type="submit" name="down" value="v">
+      </fieldset>
+    </div>
+    <div class="container3">
+      <section>
+        <ul>
+          <li>
+            <h3>Макет Sedona</h3>
+            <a href="#.html">
+              <img src="https://via.placeholder.com/460x618" alt="sedona">
+            </a>
+            <div class="visually-hidden">
+              <p>sedona</p>
+              <p>Информационный сайт для туристов</p>
+              <input type="button" value="9990 ₽">
+            </div>
+          </li>
+          <li>
+            <h3>Макет Pink</h3>
+            <a href="#.html">
+              <img src="https://via.placeholder.com/460x618" alt="Pink">
+            </a>
+            <div class="visually-hidden">
+              <p>Pink app</p>
+              <p>Продуктовый лендингприложения для iOS и Android</p>
+              <input type="button" value="9990 ₽">
+            </div>
+          </li>
+          <li>
+            <h3>Макет Barbershop</h3>
+            <a href="#.html">
+              <img src="https://via.placeholder.com/460x618" alt="Barbershop">
+            </a>
+            <div class="visually-hidden">
+              <p>Barbershop</p>
+              <p>Сайт салона красоты.Для мужчин, да.</p>
+              <input type="button" value="9990 ₽">
+            </div>
+          </li>
+          <li>
+            <h3>Макет Mishka</h3>
+            <a href="#.html">
+              <img src="https://via.placeholder.com/460x618" alt="Mishka">
+            </a>
+            <div class="visually-hidden">
+              <p>Mishka</p>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <input type="button" value="9990 ₽">
+            </div>
+          </li>
+          <li>
+            <h3>Макет A Plus</h3>
+            <a href="#.html">
+              <img src="https://via.placeholder.com/460x618" alt="a_plus">
+            </a>
+            <div class="visually-hidden">
+              <p>A Plus</p>
+              <p>Лендинг курсов повышения квалификации</p>
+              <input type="button" value="9990 ₽">
+            </div>
+          </li>
+          <li>
+            <h3>Макет Кваст</h3>
+            <a href="#.html">
+              <img src="https://via.placeholder.com/460x618" alt="kvast">
+            </a>
+            <div class="visually-hidden">
+              <p>A Plus</p>
+              <p>Промо-сайт производителякрафтового кваса</p>
+              <input type="button" value="9990 ₽">
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="container4">
+      <ul>
+      <li>
+        <a>1</a>
+      </li>
+      <li>
+        <a href="#">2</a>
+      </li>
+      <li>
+        <a href="#">3</a>
+      </li>
+      <li>
+        <input type="button" value="Следующая">
+      </li>
+    </ul>
+    </div>
+    <div class="container5">
+      <section>
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a href="blank.html">НАПИШИТЕ НАМ</a>
+        <img src="https://via.placeholder.com/1440x416" alt="map" width="1440" height="416">
+      </section>
+    </div>
+  </main>
 
-  </fieldset>
-</section>
-      </main>
+  <footer>
+    <div class="container6">
+      <ul>
+        <li><a href="#">VK</a></li>
+        <li><a href="#">FB</a></li>
+        <li><a href="#">INST</a></li>
+      </ul>
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+</body>
 
-    <footer>
-
-    </footer>
-    </body>
 </html>
