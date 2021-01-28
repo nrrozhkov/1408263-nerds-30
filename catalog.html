@@ -20,8 +20,8 @@
           <li><a href="#.html">Контакты</a></li>
         </ul>
         <ul>
-        <a href="#.html">Корзина</a>
-      </ul>
+          <li><a href="#.html">Корзина</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -36,52 +36,75 @@
 
     <section>
       <div class="container">
-        <figure>
-          <figcaption>стоимость:</figcaption>
-          <input type="range" min="0" max="25000" value="0">
+        <form action="" method="">
           <fieldset>
-            <label for="from">от</label>
-            <input type="text" name="от" id="from" value="0">
+            <legend>стоимость:</legend>
+
+            <div>Место ползунка</div>
+            <div>
+              <label for="from">от</label>
+              <input type="text" name="от" id="from" value="0">
+            </div>
             <label for="to">до</label>
             <input type="text" name="до" id="to" value="15000">
           </fieldset>
+          <!-- Обернуть лейбл и инпут дивами -->
           <fieldset>
-            <label>сетка:</label>
-            <input type="radio" value="Адаптивная" id="adaptive" checked>
-            <label for="adaptive">Адаптивная</label><br>
-            <input type="radio" value="Фиксированная" id="fixed">
-            <label for="fixed">Фиксированная</label><br>
-            <input type="radio" value="Резиновая" id="rubber-like">
-            <label for="rubber-like">Резиновая</label>
+            <legend>сетка:</legend>
+            <div>
+              <input type="radio" value="Адаптивная" id="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+            </div>
+            <div>
+              <input type="radio" value="Фиксированная" id="fixed">
+              <label for="fixed">Фиксированная</label>
+            </div>
+            <div>
+              <input type="radio" value="Резиновая" id="rubber-like">
+              <label for="rubber-like">Резиновая</label>
+            </div>
           </fieldset>
           <fieldset>
-            <label>особенности:</label>
-            <input type="checkbox" value="Слайдер" id="slider" checked>
-            <label for="slider">Слайдер</label><br>
-            <input type="checkbox" value="Блок преимуществ" id="block">
-            <label for="block">Блок преимуществ</label><br>
-            <input type="checkbox" value="Новости" id="news" checked>
-            <label for="news">Новости</label><br>
-            <input type="checkbox" value="Галерея" id="gallery">
-            <label for="gallery">Галерея</label><br>
-            <input type="checkbox" value="Корзина" id="basket">
-            <label for="basket">Корзина</label>
+            <legend>особенности:</legend>
+            <div>
+              <input type="checkbox" value="Слайдер" id="slider" checked>
+              <label for="slider">Слайдер</label>
+            </div>
+            <div>
+              <input type="checkbox" value="Блок преимуществ" id="block">
+              <label for="block">Блок преимуществ</label>
+            </div>
+            <div>
+              <input type="checkbox" value="Новости" id="news" checked>
+              <label for="news">Новости</label>
+            </div>
+            <div>
+              <input type="checkbox" value="Галерея" id="gallery">
+              <label for="gallery">Галерея</label>
+            </div>
+            <div>
+              <input type="checkbox" value="Корзина" id="basket">
+              <label for="basket">Корзина</label>
+            </div>
           </fieldset>
           <input type="submit" value="показать">
-        </figure>
+        </form>
       </div>
     </section>
 
 
-    <fieldset>
+    <section>
       <div class="container">
-        <input type="submit" name="по цене" value="по цене">
-        <input type="submit" name="по типу" value="по типу">
-        <input type="submit" name="по названию" value="по названию">
-        <input type="submit" name="up" value="^">
-        <input type="submit" name="down" value="v">
+        <!-- Добавить как список, содержимое li обернуть как ссылки -->
+        <ul>
+          <li><a herf="#.html">по цене</a></li>
+          <li><a herf="#.html">по типу</a></li>
+          <li><a herf="#.html">по названию</a></li>
+          <li><a herf="#.html">вверх</a></li>
+          <li><a herf="#.html">вниз</a></li>
+        </ul>
       </div>
-    </fieldset>
+    </section>
 
 
     <section>
