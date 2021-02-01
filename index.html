@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="Favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="Favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body>
+<body class="page-body">
 
-  <header>
+  <header class="main-header">
     <div class="container">
-      <a>
+      <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="159" height="65" alt="logo nerds">
       </a>
-      <nav>
+      <nav class="site-navigation">
         <ul>
           <li><a href="index.html">Студия</a></li>
           <li><a href="#.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#.html">Контакты</a></li>
         </ul>
-        <a href="#.html">Корзина</a>
+        <a class="basket" href="#.html">Корзина</a>
       </nav>
     </div>
   </header>
@@ -33,15 +36,15 @@
     <h1>Cайт студии дизайна nёrds</h1>
     <section>
       <div class="container">
-        <ul>
-          <li>
+        <ul class="main-slider">
+          <li class="slide">
             <p>Долго, дорого, скурпулзно</p>
             <p>Математически выверенный дизайн<br>
               для вашего сайта или мобильного приложения.</p>
             <p><a href="#">узнать больше</a></p>
             <img src="img/nerds-index-slide1.png" alt="banner-picture1" width="760" height="431">
           </li>
-          <li>
+          <li class="slide">
             <p>Любим математику как<br>
               как никто другой</p>
             <p>Никакого креатива, только математические формулы<br>
@@ -49,7 +52,7 @@
             <p><a href="#">узнать больше</a></p>
             <img src="img/nerds-index-slide2.png" alt="banner-picture2" width="760" height="431">
           </li>
-          <li>
+          <li class="slide">
             <p>Только ночь,<br>
               только хардкор</p>
             <p>Работать днем, как все? Мы против этого.<br>
@@ -63,22 +66,22 @@
     <section>
       <div class="container">
         <h2>Что мы умеем делать</h2>
-        <ul>
-          <li>
+        <ul class="features-list">
+          <li class="feature-item">
             <img src="img/illustration-1.jpg" alt="webdev" width="300" height="146">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним<br>
               после того как увидит ваш сайт!</p>
             <a href="#">купить</a>
           </li>
-          <li>
+          <li class="feature-item">
             <img src="img/illustration-2.jpg" alt="appdev" width="300" height="146">
             <h3>Приложения</h3>
             <p>Покорите ТОП-10 приложений<br>
               в AppStore и Google Play</p>
             <a href="#">купить</a>
           </li>
-          <li>
+          <li class="feature-item">
             <img src="img/illustration-3.jpg" alt="presentations" width="300" height="146">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете<br>
@@ -90,20 +93,20 @@
     </section>
     <section>
       <div class="container">
-        <h2>Кто мы</h2>
-        <p>Мы - маленькая, но гордая<br>
+        <h2 class="self-presentation">Кто мы</h2>
+        <p class="self-presentation-item">Мы - маленькая, но гордая<br>
           дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+          <p class="self-presentation-item">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
           превыше креатива. Работаем не покладая рук, как роботы.</p>
         <h3>выполняем заказы на разработку:</h3>
-        <ul>
-          <li>
+        <ul class="competitions-list">
+          <li class="competition-item">
             <p>Веб-сайтов любой сложности</p>
           </li>
-          <li>
+          <li class="competition-item">
             <p>Мобильных приложений для iOS и Android</p>
           </li>
-          <li>
+          <li class="competition-item">
             <p>Слайдшоу и видео для корпоративных презентаций</p>
           </li>
         </ul>
@@ -113,47 +116,47 @@
       <div class="container">
         <img src="img/nerds-illustration.png" alt="logo" width="360" height="208">
         <h3>с 2004 года любим точность во всем:</h3>
-        <table id="terms">
-          <tr>
-            <th><span>146</span><span>%</span></th>
-            <th><span>100</span><span>%</span></th>
-            <th><span>50</span><span>%</span></th>
+        <table class="terms">
+          <tr class="col">
+            <th class="row"><span>146</span><span>%</span></th>
+            <th class="row"><span>100</span><span>%</span></th>
+            <th class="row"><span>50</span><span>%</span></th>
           </tr>
-          <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
+          <tr class="col">
+            <td class="row">Уровень самоотдачи</td>
+            <td class="row">Соблюдение сроков</td>
+            <td class="row">Минимальная предоплата</td>
           </tr>
         </table>
       </div>
     </section>
     <section>
       <div class="container">
-        <ul>
-          <li><a href="#"><img src="img/html-logo.png" width="199" height="68" alt="htmlacademy-logo"></a></li>
-          <li><a href="#"><img src="img/logo-borodinski.svg" width="209" height="90" alt="borodinski-logo"></a></li>
-          <li><a href="#"><img src="img/logo-pink.png" width="185" height="52" alt="pink-logo"></a></li>
-          <li><a href="#"><img src="img/logo-mishka.png" width="173" height="84" alt="mishka-logo"></a></li>
+        <ul class="brands-list">
+          <li class="brand-item"><a href="#"><img src="img/html-logo.png" width="199" height="68" alt="htmlacademy-logo"></a></li>
+          <li class="brand-item"><a href="#"><img src="img/logo-borodinski.svg" width="209" height="90" alt="borodinski-logo"></a></li>
+          <li class="brand-item"><a href="#"><img src="img/logo-pink.png" width="185" height="52" alt="pink-logo"></a></li>
+          <li class="brand-item"><a href="#"><img src="img/logo-mishka.png" width="173" height="84" alt="mishka-logo"></a></li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="contacts">
       <div class="container">
         <h3>Nёrds design studio</h3>
         <p>191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a href="blank.html">Напишите нам</a>
+        <p>тел.<a class="contacts-phone" href="tel: +78122757575"></a> +7 (812) 275-75-75</p>
+        <a class="button" href="blank.html">Напишите нам</a>
         <img src="img/map.png" alt="map" width="1440" height="416">
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="main-footer">
     <div class="container">
-      <ul>
-        <li><a href="#">vk</a></li>
-        <li><a href="#">fb</a></li>
-        <li><a href="#">inst</a></li>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#">vk</a></li>
+        <li><a class="social-button" href="#">fb</a></li>
+        <li><a class="social-button" href="#">inst</a></li>
       </ul>
       <p>Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
