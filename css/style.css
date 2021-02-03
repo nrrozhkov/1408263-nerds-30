@@ -7,30 +7,326 @@
        url("../fonts/roboto.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-
+}
+@font-face {
   font-family: "Roboto";
   src: local("Roboto"),
        url("../fonts/robotomedium.woff2") format("woff2"),
        url("../fonts/robotomedium.woff2") format("woff");
   font-weight: 500;
   font-style: normal;
-
+}
+@font-face {
   font-family: "Roboto";
   src: local("Roboto"),
        url("../fonts/robotobold.woff2") format("woff2"),
        url("../fonts/robotobold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
-
 }
 /* Variables */
 
 :root {
-  --basic black: #000000;
-  --basic white: #FFFFFF;
-  --basic red: #FB565A;
-  --basic green: #00CA74;
-  --basic yellow: #EFC84A;
-;
+ /* Main navigation */
+  --basic-black: #000000;
+  --basket-gray: #A6A6A6;
+  --header-gray: #EEEEEE;
+  --basic-white: #FFFFFF;
+  --font-black: #283136;
 
+/* Filter */
+--range-center: #ABABAB;
+--filter-buttons: #4D4D4D;
+--up-push: #231F20;
+--up-down: #A6A6A6;
+
+
+
+  /* Body */
+  --background-gray: #888888;
+  --map-gray: #666666;
+
+  /* Footer */
+--ten-percent: #444444;
+
+
+
+/* Buttons */
+--button-red: #FB565A;
+--focus-red: #E74246;
+--push-red: #D7373B;
+--button-green: #00CA74;
+--focus-green: #00BC6C;
+--push-green: #00AA62;
+--button-yellow: #EFC84A;
+--focus-yellow: #EAB534;
+--push-yellow: #E5A722;
+--social-button: #E1E1E1;
+--border-frame: #D7DCDE;
+--focus-gray: #DFDFDF;
+--push-gray: #D5D5D5;
+--active-border: #DBDBDB;
+}
+
+/* Global */
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var("--font black");
+  background-color: var(--basic-white);
+
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main h1{
+  display: none;
+}
+
+button a {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+/* Header */
+.main-header {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--header-gray);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+
+/* User-navigation */
+
+.main-header-logo svg:active {
+  fill: var(--up-down);
+}
+
+.basket,
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.basket:hover,
+.site-navigation a:hover,
+.basket:focus,
+.site-navigation a:focus {
+  color: var(--button-red);
+
+}
+.basket:active,
+.site-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.active-page {
+  border-bottom: 1px solid var(--button-red);
+}
+
+
+
+/* Slider */
+
+.main-slider {
+  background-color: var(--header-gray);
+  list-style: none;
+}
+.slide h3 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+.slide p {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font-black);
+}
+.slide button {
+  background-color: var(--button-red);
+}
+
+}
+.slide button:hover {
+  background-color: var(--focus-red);
+}
+
+.slide button:active {
+  background-color: var(--push-red);
+}
+
+/* What we can */
+
+section h2 {
+  display: none;
+}
+.features-list {
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130px;
+  color: var("--basic-black");
+  text-transform: uppercase;
+}
+.feature-item p {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font-black);
+}
+
+.buy1 {
+  background-color: var(--button-red);
+}
+.buy1:hover {
+  background-color: var(--focus-red);
+}
+.buy1:focus {
+  background-color: var(--push-red);
+}
+.buy2 {
+  background-color: var(--button-green);
+}
+.buy2:hover {
+  background-color: var(--focus-green);
+}
+.buy2:active {
+  background-color: var(--push-green);
+}
+.buy3 {
+  background-color: var(--button-yellow);
+}
+.buy3:hover {
+  background-color: var(--focus-yellow);
+}
+.buy3:active {
+  background-color: var(--push-yellow);
+}
+
+/* Self presentation */
+.about-company {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font-black);
+}
+.self-presentation {
+  display: none;
+}
+.self-presentation-header {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--font-black);
+}
+h3 {
+  text-transform: uppercase;
+}
+.competitions-list {
+  list-style: none;
+}
+
+.self-presentation-item,
+.competition-item {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font-black);
+}
+
+/* table */
+.terms {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+.terms h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+}
+.row1 span {
+  font-size: 45px;
+  line-height: 64px;
+}
+.row2 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--font-black);
+}
+/* Map */
+.contacts h3 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+.contacts p {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--map-gray);
+}
+.contacts button {
+  background-color: var(--button-red);
+}
+.contacts button:hover {
+  background-color: var(--focus-red);
+}
+.contacts button:active {
+  background-color: var(--push-red);
+}
+/* Footer */
+.main-footer .head {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-gray);
+}
+.main-footer .subtitle {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--ten-percent);
 }
