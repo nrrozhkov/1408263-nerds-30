@@ -77,7 +77,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: var("--font black");
+  color: var(--font-black);
   background-color: var(--basic-white);
 
 }
@@ -89,18 +89,8 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-main h1{
-  display: none;
-}
-
-button a {
-  font-family: "Roboto", Arial, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: var(--basic-white);
+main {
+  background-color: var(--basic-white);
 }
 /* Header */
 .main-header {
@@ -116,7 +106,6 @@ button a {
 .site-navigation {
   list-style: none;
 }
-
 
 /* User-navigation */
 
@@ -146,7 +135,80 @@ button a {
   border-bottom: 1px solid var(--button-red);
 }
 
+.page-title h1{
+  display: none;
+}
 
+.page-headline {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+  background-color: var(--header-gray);
+}
+
+/* Filter */
+.range-form {
+  border: none;
+}
+
+.filter-headline {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+input[type="text"] {
+  background-color: var(--header-gray);
+  border: none;
+}
+.radio-button {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.radio-button label:hover {
+	color: var(--filter-buttons);
+}
+.radio-button label:disabled {
+	filter: grayscale(100%);
+}
+.filter-button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--header-gray);
+}
+.filter-button:hover {
+  background-color: var(--focus-gray);
+}
+.filter-button:disabled {
+  filter: grayscale(100%);
+}
+.position-filters {
+  list-style: none;
+}
+.position-item {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+.position-item:hover {
+  opacity: 0.6;
+}
+.position-item:focus,
+.position-item:active {
+  color: var(--basic-black);
+}
 
 /* Slider */
 
@@ -171,11 +233,6 @@ button a {
 }
 .slide button {
   background-color: var(--button-red);
-}
-
-}
-.slide button:hover {
-  background-color: var(--focus-red);
 }
 
 .slide button:active {
@@ -291,6 +348,88 @@ h3 {
   line-height: 18px;
   color: var(--font-black);
 }
+/* Products */
+.product-list {
+  list-style: none;
+}
+.product-item h3 {
+  display:none
+}
+.item-name {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--font-black);
+
+}
+.item-desc {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--map-gray);
+}
+.visually-hidden button{
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-white);
+  background-color: var(--button-red);
+}
+
+.visually-hidden button:hover {
+  background-color: var(--focus-red);
+}
+.visually-hidden button:hover {
+  background-color: var(--focus-red);
+}
+.visually-hidden button:active {
+  background-color: var(--push-red);
+  opacity: 0.3;
+}
+
+/* Pagination */
+.page-pagination {
+  list-style: none;
+}
+.pagination-item a{
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--header-gray);
+}
+.pagination-item a:hover{
+  background-color: var(--focus-gray);
+}
+.pagination-item a:focus{
+  background-color: var(--push-gray);
+}
+.pagination-item a:active{
+  background-color: var(--basic-white);
+}
+.pagination-item button{
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--header-gray);
+  text-transform: uppercase;
+}
+.pagination-item button:hover{
+  background-color: var(--focus-gray);
+}
+.pagination-item button:focus{
+  background-color: var(--push-gray);
+}
+.pagination-item button:active{
+  background-color: var(--basic-white);
+}
+
 /* Map */
 .contacts h3 {
   font-family: "Roboto", Arial, sans-serif;
@@ -330,3 +469,5 @@ h3 {
   line-height: 22px;
   color: var(--ten-percent);
 }
+
+
