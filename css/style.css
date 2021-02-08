@@ -69,8 +69,12 @@
 }
 
 /* Global */
+.page {
+  height: 100%;
+}
+
 body {
-  min-width: 1440px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -80,7 +84,12 @@ body {
   color: var(--font-black);
   background-color: var(--basic-white);
 
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
+
 a {
   text-decoration: none;
 }
@@ -106,8 +115,37 @@ main {
 .site-navigation {
   list-style: none;
 }
+/* Main navigation */
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: 160px 1fr 160px;
+}
+
+.main-header-logo {
+  order: left;
+
+}
+
+.site-navigation {
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Container */
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
 /* User-navigation */
+
+.user-navigation {
+  justify-self: right;
+}
 
 .main-header-logo svg:active {
   fill: var(--up-down);
@@ -215,6 +253,8 @@ input[type="text"] {
 .main-slider {
   background-color: var(--header-gray);
   list-style: none;
+  margin:0;
+  padding: 0;
 }
 .slide h3 {
   font-family: "Roboto", Arial, sans-serif;
@@ -245,6 +285,13 @@ section h2 {
   display: none;
 }
 .features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  margin-top: 80px;
+  padding: 0;
+  column-gap: 100px;
+
   list-style: none;
 }
 
@@ -293,6 +340,11 @@ section h2 {
 }
 
 /* Self presentation */
+.seo-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1160px;
+}
 .about-company {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
@@ -348,6 +400,14 @@ h3 {
   line-height: 18px;
   color: var(--font-black);
 }
+
+/* Brands slider */
+.brands-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+}
+
 /* Products */
 .product-list {
   list-style: none;
@@ -455,6 +515,12 @@ h3 {
   background-color: var(--push-red);
 }
 /* Footer */
+.footer-wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+
 .main-footer .head {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
@@ -468,6 +534,15 @@ h3 {
   font-size: 16px;
   line-height: 22px;
   color: var(--ten-percent);
+}
+
+.footer-social {
+  width: 260px;
+  list-style: none;
+}
+
+.footer-title {
+
 }
 
 
