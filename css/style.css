@@ -101,6 +101,14 @@ img {
 main {
   background-color: var(--basic-white);
 }
+
+.btn {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 /* Header */
 .main-header {
   font-family: "Roboto", Arial, sans-serif;
@@ -250,6 +258,10 @@ input[type="text"] {
 
 /* Slider */
 
+.main-slider-background {
+  background-color: var(--header-gray);
+}
+
 .main-slider {
   background-color: var(--header-gray);
   list-style: none;
@@ -271,11 +283,12 @@ input[type="text"] {
   line-height: 24px;
   color: var(--font-black);
 }
-.slide button {
+.slider-btn {
   background-color: var(--button-red);
+  color: var(--basic-white);
 }
 
-.slide button:active {
+.slider-btn:active {
   background-color: var(--push-red);
 }
 
@@ -313,7 +326,9 @@ section h2 {
 
 .buy1 {
   background-color: var(--button-red);
+  color: var(--basic-white);
 }
+
 .buy1:hover {
   background-color: var(--focus-red);
 }
@@ -322,6 +337,7 @@ section h2 {
 }
 .buy2 {
   background-color: var(--button-green);
+  color: var(--basic-white);
 }
 .buy2:hover {
   background-color: var(--focus-green);
@@ -331,6 +347,7 @@ section h2 {
 }
 .buy3 {
   background-color: var(--button-yellow);
+  color: var(--basic-white);
 }
 .buy3:hover {
   background-color: var(--focus-yellow);
@@ -379,6 +396,14 @@ h3 {
 }
 
 /* table */
+.terms caption {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  font-weight: 24px;
+  color: var(--basic-black);
+}
+
 .terms {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
@@ -505,13 +530,14 @@ h3 {
   line-height: 18px;
   color: var(--map-gray);
 }
-.contacts button {
+.btn-map {
   background-color: var(--button-red);
+  color: var(--basic-white);
 }
-.contacts button:hover {
+.btn-map:hover {
   background-color: var(--focus-red);
 }
-.contacts button:active {
+.btn-map:active {
   background-color: var(--push-red);
 }
 /* Footer */
