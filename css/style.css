@@ -68,6 +68,17 @@
 --active-border: #DBDBDB;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  /* outline: 1px solid gray; */
+}
+
 /* Global */
 .page {
   height: 100%;
@@ -83,7 +94,6 @@ body {
   font-weight: 400;
   color: var(--font-black);
   background-color: var(--basic-white);
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -109,23 +119,27 @@ main {
   line-height: 18px;
   text-transform: uppercase;
 }
+
+.hidden {
+  display: none;
+}
+
 /* grid */
 .page-catalog{
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 1fr;
   align-content: start;
   outline: 5px solid rgba(91, 145, 47, 0.7);
   outline-offset: -5px;
-
-
 }
+
 .page-filter {
   outline: 5px solid rgba(0, 255, 255, 0.7);
   outline-offset: -5px;
 }
-.product-sort {
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
+
+.product-sort-container {
+  display: flex;
 }
 
 .product-catalog {
@@ -135,10 +149,10 @@ main {
 }
 
 .page-headline {
-  grid-column: 1 / -1;
   outline: 5px solid rgba(139, 34, 108, 0.7);
   outline-offset: -5px;
   margin-bottom: 55px;
+  background-color: var(--basic-gray);
 }
 
 .page-headline h1 {
@@ -147,7 +161,7 @@ main {
   font-size: 55px;
   line-height: 55px;
   color: var(--basic-black);
-  padding: 72px 219px 108px 221px;
+
 }
 
 
@@ -183,7 +197,6 @@ main {
 
 .main-header-logo {
   order: left;
-
 }
 
 .site-navigation {
@@ -304,7 +317,6 @@ input[type="text"] {
 }
 
 /* Slider */
-
 .main-slider-background {
   background-color: var(--header-gray);
 }
@@ -321,6 +333,7 @@ input[type="text"] {
   font-size: 55px;
   line-height: 55px;
   color: var(--basic-black);
+  margin: 0;
 }
 
 .slide p {
@@ -408,6 +421,8 @@ section h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 1160px;
+  margin-top: 73px;
+  margin-bottom: 73px;
 }
 .about-company {
   font-family: "Roboto", Arial, sans-serif;
@@ -563,6 +578,10 @@ h3 {
 }
 
 /* Map */
+.contacts {
+  margin-top: 73px;
+}
+
 .contacts h3 {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;

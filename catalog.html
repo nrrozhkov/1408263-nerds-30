@@ -15,7 +15,9 @@
 </head>
 
 <body class="page-body">
+
   <header class="main-header">
+
     <div class="container">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -26,18 +28,21 @@
               d="M113.207 27.161C112.726 29.6539 112.354 32.1666 112.092 34.692C111.033 44.752 111.48 53.688 112.705 57.678C113.431 59.815 116.162 62.624 118.783 59.701C121.626 56.498 124.75 58.352 120.957 62.117C118.617 64.422 114.268 65.995 109.918 65.545C106.795 65.152 104.9 63.13 103.784 60.04C103.34 60.938 102.837 61.725 102.224 62.342C100.105 64.535 97.5389 65.772 94.2499 65.434C87.6129 64.704 83.7119 57.511 85.5509 47.281C87.5029 36.49 96.87 32.556 102.279 35.424C102.391 34.075 102.502 32.725 102.614 31.32C102.641 31.1795 102.655 31.039 102.669 30.8985C102.683 30.758 102.696 30.6175 102.724 30.477C101.079 30.8387 99.424 31.1575 97.7619 31.433C73.7869 35.423 82.0399 15.864 87.8939 10.75C94.53 5.017 95.2539 8.895 93.1909 10.188C89.5109 12.548 87.8939 26.093 98.4319 26.093C100.161 26.093 101.778 25.981 103.394 25.812C106.685 7.49 116.665 -1.391 124.75 1.532C133.726 4.792 132.779 19.067 113.207 27.161ZM102.279 51.554C102.055 48.012 102.055 44.022 102.112 39.918C102.112 39.6576 102.127 39.3974 102.141 39.1449C102.155 38.9068 102.168 38.6754 102.168 38.457C98.8219 36.939 95.5329 42.11 94.6949 49.249C93.7489 57.622 97.483 62.062 99.6029 60.04C101.22 58.409 102.056 53.237 102.279 51.554ZM126.365 8.389C124.581 5.747 118.058 8.951 114.267 22.721C123.802 18.167 127.593 10.299 126.365 8.389Z" />
           </svg>
         </a>
+
         <ul class="site-navigation">
           <li><a href="index.html" class="active-page">Студия</a></li>
           <li><a href="#.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#.html">Контакты</a></li>
         </ul>
+
         <div class="user-navigation">
           <a class="basket" href="#.html">Корзина</a>
         </div>
       </nav>
     </div>
   </header>
+
   <main>
     <div class="page-catalog">
       <section class="page-headline">
@@ -46,65 +51,63 @@
         </div>
       </section>
 
-      <section class="product-sort">
-        <div class="container">
-          <section class="page-filter"></section>
-          <form action="post" method="get">
-            <fieldset class="range-form">
-              <legend class="filter-headline">стоимость:</legend>
-              <div>Место ползунка</div>
-              <div>
-                <label for="from">от</label>
-                <input type="text" name="от" id="from" value="0">
-              </div>
-              <label for="to">до</label>
-              <input type="text" name="до" id="to" value="15000">
-            </fieldset>
+        <section class="product-sort">
+          <div class="product-sort-container container">
+            <form action="post" method="get">
+              <fieldset class="range-form">
+                <legend class="filter-headline">стоимость:</legend>
+                <div>Место ползунка</div>
+                <div>
+                  <label for="from">от</label>
+                  <input type="text" name="от" id="from" value="0">
+                </div>
+                <label for="to">до</label>
+                <input type="text" name="до" id="to" value="15000">
+              </fieldset>
 
-            <fieldset class="range-form">
-              <legend class="filter-headline">сетка:</legend>
-              <div class="radio-button">
-                <input type="radio" value="Адаптивная" id="adaptive" checked>
-                <label for="adaptive">Адаптивная</label>
-              </div>
-              <div class="radio-button">
-                <input type="radio" value="Фиксированная" id="fixed">
-                <label for="fixed">Фиксированная</label>
-              </div>
-              <div class="radio-button">
-                <input type="radio" value="Резиновая" id="rubber-like">
-                <label for="rubber-like">Резиновая</label>
-              </div>
-            </fieldset>
-            <fieldset class="range-form">
-              <legend class="filter-headline">особенности:</legend>
-              <div>
-                <input type="checkbox" value="Слайдер" id="slider" checked>
-                <label for="slider">Слайдер</label>
-              </div>
-              <div>
-                <input type="checkbox" value="Блок преимуществ" id="block">
-                <label for="block">Блок преимуществ</label>
-              </div>
-              <div>
-                <input type="checkbox" value="Новости" id="news" checked>
-                <label for="news">Новости</label>
-              </div>
-              <div>
-                <input type="checkbox" value="Галерея" id="gallery">
-                <label for="gallery">Галерея</label>
-              </div>
-              <div>
-                <input type="checkbox" value="Корзина" id="basket">
-                <label for="basket">Корзина</label>
-              </div>
-            </fieldset>
-            <button class="filter-button">показать</button>
-          </form>
-        </div>
-      </section>
+              <fieldset class="range-form">
+                <legend class="filter-headline">сетка:</legend>
+                <div class="radio-button">
+                  <input type="radio" value="Адаптивная" id="adaptive" checked>
+                  <label for="adaptive">Адаптивная</label>
+                </div>
+                <div class="radio-button">
+                  <input type="radio" value="Фиксированная" id="fixed">
+                  <label for="fixed">Фиксированная</label>
+                </div>
+                <div class="radio-button">
+                  <input type="radio" value="Резиновая" id="rubber-like">
+                  <label for="rubber-like">Резиновая</label>
+                </div>
+              </fieldset>
+              <fieldset class="range-form">
+                <legend class="filter-headline">особенности:</legend>
+                <div>
+                  <input type="checkbox" value="Слайдер" id="slider" checked>
+                  <label for="slider">Слайдер</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="Блок преимуществ" id="block">
+                  <label for="block">Блок преимуществ</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="Новости" id="news" checked>
+                  <label for="news">Новости</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="Галерея" id="gallery">
+                  <label for="gallery">Галерея</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="Корзина" id="basket">
+                  <label for="basket">Корзина</label>
+                </div>
+              </fieldset>
+              <button class="btn filter-button">показать</button>
+            </form>
+        </section>
 
-      <!-- <div class="container">
+        <section class="product-catalog">
           <p class="filter-headline">сортировать:</p>
           <ul class="position-filters">
             <li class="position-item"><a href="#.html">по цене</a></li>
@@ -113,20 +116,6 @@
             <li class="position-item"><a href="#.html">вверх</a></li>
             <li class="position-item"><a href="#.html">вниз</a></li>
           </ul>
-        </div> -->
-
-      <section class="product-catalog container">
-        <div class="container">
-          <p class="filter-headline">сортировать:</p>
-          <ul class="position-filters">
-            <li class="position-item"><a href="#.html">по цене</a></li>
-            <li class="position-item"><a href="#.html">по типу</a></li>
-            <li class="position-item"><a href="#.html">по названию</a></li>
-            <li class="position-item"><a href="#.html">вверх</a></li>
-            <li class="position-item"><a href="#.html">вниз</a></li>
-          </ul>
-        </div>
-        <div class="container">
           <ul class="product-list">
             <li class="product-item">
               <h3>Макет Sedona</h3>
@@ -195,38 +184,24 @@
               </div>
             </li>
           </ul>
-        </div>
-        <ul class="page-pagination">
-          <li class="pagination-item">
-            <a>1</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <input type="button" value="Следующая">
-          </li>
-        </ul>
+          <ul class="page-pagination">
+            <li class="pagination-item">
+              <a>1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <input type="button" value="Следующая">
+            </li>
+          </ul>
+      </div>
+
       </section>
-      <!-- <div class="container">
-        <ul class="page-pagination">
-          <li class="pagination-item">
-            <a>1</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <input type="button" value="Следующая">
-          </li>
-        </ul>
-      </div>  -->
+    </div>
     </div>
 
     <section class="contacts">
