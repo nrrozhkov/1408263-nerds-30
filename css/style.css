@@ -129,28 +129,22 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   align-content: start;
-  outline: 5px solid rgba(91, 145, 47, 0.7);
-  outline-offset: -5px;
+
 }
 
-.page-filter {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-}
+
 
 .product-sort-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
 }
 
 .product-catalog {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
   margin-left: 141px;
 }
 
 .page-headline {
-  outline: 5px solid rgba(139, 34, 108, 0.7);
-  outline-offset: -5px;
   margin-bottom: 55px;
   background-color: var(--basic-gray);
 }
@@ -297,6 +291,8 @@ input[type="text"] {
   filter: grayscale(100%);
 }
 .position-filters {
+  margin: 0;
+  margin-bottom: 40px;
   list-style: none;
 }
 .position-item {
