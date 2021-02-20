@@ -15,7 +15,6 @@
 </head>
 
 <body class="page-body">
-
   <header class="main-header">
     <div class="container">
       <nav class="main-navigation">
@@ -45,7 +44,7 @@
 
   </header>
 
-  <main>
+  <main class="page-catalog">
     <section class="page-headline">
       <div class="container">
         <h1>Магазин готовых шаблонов</h1>
@@ -109,14 +108,16 @@
 
 
         <section class="product-catalog">
-          <p class="filter-headline">сортировать:</p>
-          <ul class="position-filters">
-            <li class="position-item"><a href="#.html">по цене</a></li>
-            <li class="position-item"><a href="#.html">по типу</a></li>
-            <li class="position-item"><a href="#.html">по названию</a></li>
-            <li class="position-item"><a href="#.html">вверх</a></li>
-            <li class="position-item"><a href="#.html">вниз</a></li>
-          </ul>
+          <div class="sort-filter">
+            <p class="filter-headline">сортировать:</p>
+            <ul class="position-filters">
+              <li class="position-item"><a href="#.html">по цене</a></li>
+              <li class="position-item"><a href="#.html">по типу</a></li>
+              <li class="position-item"><a href="#.html">по названию</a></li>
+              <li class="position-item"><a href="#.html">вверх</a></li>
+              <li class="position-item"><a href="#.html">вниз</a></li>
+            </ul>
+          </div>
           <ul class="product-list">
             <li class="product-item">
               <h3>Макет Sedona</h3>
@@ -129,10 +130,10 @@
                 <button type="submit" value="9990">9990</button>
               </div>
             </li>
-            <li>
+            <li class="product-item">
               <h3>Макет Pink</h3>
               <a href="#.html">
-                <img src="img/img-pink.jpg" width="358" height="578" alt="Pink-template">
+                <img src="img/img-pink.jpg" width="359" height="578" alt="Pink-template">
               </a>
               <div class="visually-hidden">
                 <p class="item-name">Pink app</p>
@@ -140,10 +141,10 @@
                 <button type="submit" value="9990">9990</button>
               </div>
             </li>
-            <li>
+            <li class="product-item">
               <h3>Макет Barbershop</h3>
               <a href="#.html">
-                <img src="img/img-barbershop.jpg" width="358" height="578" alt="Barbershop-template">
+                <img src="img/img-barbershop.jpg" width="359" height="578" alt="Barbershop-template">
               </a>
               <div class="visually-hidden">
                 <p class="item-name">Barbershop</p>
@@ -151,7 +152,7 @@
                 <button type="submit" value="9990">9990</button>
               </div>
             </li>
-            <li>
+            <li class="product-item">
               <h3>Макет Mishka</h3>
               <a href="#.html">
                 <img src="img/img-mishka.jpg" width="359" height="578" alt="Mishka-template">
@@ -162,7 +163,7 @@
                 <button type="submit" value="9990">9990</button>
               </div>
             </li>
-            <li>
+            <li class="product-item">
               <h3>Макет A Plus</h3>
               <a href="#.html">
                 <img src="img/img-aplus.jpg" width="359" height="578" alt="a_plus-template">
@@ -173,7 +174,7 @@
                 <button type="submit" value="9990">9990</button>
               </div>
             </li>
-            <li>
+            <li class="product-item">
               <h3>Макет Кваст</h3>
               <a href="#.html">
                 <img src="img/img-kvast.jpg" width="359" height="578" alt="kvast-template">
@@ -207,12 +208,18 @@
 
     <section class="contacts">
       <div class="container">
-        <h3>Nёrds design studio</h3>
-        <p>191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел.<a class="contacts-phone" href="tel:+78122757575"></a> +7 (812) 275-75-75</p>
-        <button class="btn btn-map">напишите нам</button>
-        <img src="img/map.png" alt="map" width="1440" height="416">
+        <div class="contacts-block">
+          <h3>Nёrds design studio</h3>
+          <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел.<a class="contacts-phone" href="tel:+78122757575"></a> +7 (812) 275-75-75</p>
+          <button class="btn btn-map">напишите нам</button>
+        </div>
+        <div class="map-picture">
+          <img src="img/map.png" alt="map" width="1440" height="416">
+        </div>
+        <div class="map">
+        </div>
       </div>
     </section>
   </main>
