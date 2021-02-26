@@ -46,14 +46,15 @@
       <div class="container">
         <ul class="main-slider">
           <li class="slide">
-            <h3>Долго, дорого, скурпулзно</h3>
+            <h3>Долго, дорого, <br>
+              скурпулёзно.</h3>
             <p>Математически выверенный дизайн<br>
               для вашего сайта или мобильного приложения.</p>
             <button class="btn slider-btn">узнать больше</button>
-            <img src="img/nerds-index-slide1.png" alt="banner-picture1" width="760" height="431">
+            <img class="slide-img" src="img/nerds-index-slide1.png" alt="banner-picture1" width="760" height="431">
           </li>
           <li class="slide hidden">
-            <h3>Любим математику как<br>
+            <h3>Любим математику <br>
               как никто другой</h3>
             <p>Никакого креатива, только математические формулы<br>
               для расчета идеальных пропорций</p>
@@ -69,11 +70,12 @@
             <img src="img/nerds-index-slide3.png" width="760" height="431" alt="banner-picture3">
           </li>
         </ul>
-        <div class="button-slider">
-          <input type="radio" value="slide-1" class="btn slider-btn">
-          <input type="radio" value="slide-2" class="btn slider-btn">
-          <input type="radio" value="slide-3" class="btn slider-btn">
+        <div class="slide-switch">
+          <input type="radio" value="slide-1" class="switch-btn">
+          <input type="radio" value="slide-2" class="switch-btn">
+          <input type="radio" value="slide-3" class="switch-btn">
         </div>
+
       </div>
     </section>
     <section class="features">
@@ -112,7 +114,7 @@
             дизайн-студия из Краснодара.</p>
           <p class="self-presentation-item">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
             превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <h3>выполняем заказы на разработку:</h3>
+          <h3 class="seo-title">выполняем заказы на разработку:</h3>
           <ul class="competitions-list">
             <li class="competition-item">
               <p>Веб-сайтов любой сложности</p>
@@ -125,14 +127,14 @@
             </li>
           </ul>
         </section>
-        <section>
+        <section class="competitions-table">
           <img src="img/nerds-illustration.png" alt="logo" width="360" height="208">
           <table class="terms">
             <caption>с 2004 года любим точность во всем:</caption>
             <tr class="col">
-              <th class="row1"><span>146</span><span>%</span></th>
-              <th class="row1"><span>100</span><span>%</span></th>
-              <th class="row1"><span>50</span><span>%</span></th>
+              <th class="row1"><span>146</span><sup>%</sup></th>
+              <th class="row1"><span>100</span><sup>%</sup></th>
+              <th class="row1"><span>50</span><sup>%</sup></th>
             </tr>
             <tr class="col">
               <td class="row2">Уровень самоотдачи</td>
@@ -148,7 +150,7 @@
         <ul class="brands-list">
           <li class="brand-item"><a href="#"><img src="img/html-logo.png" width="199" height="68"
                 alt="htmlacademy-logo"></a></li>
-          <li class="brand-item"><a href="#"><img src="img/logo-borodinski.svg" width="209" height="90"
+          <li class="brand-item"><a href="#"><img src="img/logo-borodinski.png" width="209" height="90"
                 alt="borodinski-logo"></a></li>
           <li class="brand-item"><a href="#"><img src="img/logo-pink.png" width="185" height="52" alt="pink-logo"></a>
           </li>
@@ -158,19 +160,50 @@
       </div>
     </section>
     <section class="contacts">
+      <div class="map-picture">
+        <img src="img/map.png" alt="map" width="1440" height="416">
+      </div>
+      <div class="map-point">
+        <img src="img/map-marker.png" alt="map-marker" width="231" height="190">
+      </div>
+      <div class="map">
+      </div>
       <div class="container">
-        <div class="contacts-block">
-          <h3>Nёrds design studio</h3>
-          <p>191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел.<a class="contacts-phone" href="tel:+78122757575"></a> +7 (812) 275-75-75</p>
-          <button class="btn btn-map">напишите нам</button>
+        <div class="contacts-container">
+          <div class="contacts-block">
+            <h3>Nёrds design studio</h3>
+            <p>191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел.<a class="contacts-phone" href="tel:+78122757575"></a> +7 (812) 275-75-75</p>
+            <button class="btn btn-map">напишите нам</button>
+          </div>
+
         </div>
-        <div class="map-picture">
-          <img src="img/map.png" alt="map" width="1440" height="416">
+      </div>
+    </section>
+    <section class="pop-up">
+      <div class="popup-container">
+        <div class="popup-title">
+          <h3>Напишите нам</h3>
+          <a href="#" class="cross-btn"><img src="img/close-cross.png" alt="close-cross" width="21" height="21"></a>
         </div>
-        <div class="map">
+        <div class="form-list">
+          <form class="contact-form" action="#" method="post">
+            <p class="form-item">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p class="form-item">
+              <label for="email">Ваш email:</label>
+              <input id="email" type="text" name="email" placeholder="email@example.com">
+            </p>
+            <p class="form-item">
+              <label for="message">Текст письма:</label>
+              <input type="text" id="message" name="customer-message" placeholder="В свободной форме">
+            </p>
+          </form>
         </div>
+        <button class="btn popup-button">отправить</button>
       </div>
     </section>
   </main>
@@ -179,9 +212,12 @@
       <div class="footer-wrapper">
         <div class="footer-social">
           <ul class="footer-social">
-            <li><a class="social-button" href="#">vk</a></li>
-            <li><a class="social-button" href="#">fb</a></li>
-            <li><a class="social-button" href="#">inst</a></li>
+            <li><a class="social-button" href="#"><img src="img/vk-icon.png" alt="vk-link" width="26" height="15"></a>
+            </li>
+            <li><a class="social-button" href="#"><img src="img/fb-icon.png" alt="fb-link" width="12" height="22"></a>
+            </li>
+            <li><a class="social-button" href="#"><img src="img/insta-icon.png" alt="insta-link" width="21"
+                  height="21"></a></li>
           </ul>
         </div>
         <div class="footer-title">
