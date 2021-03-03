@@ -55,51 +55,68 @@
       <div class="product-sort-container container">
         <form action="post" method="get">
           <fieldset class="range-form">
-            <legend class="filter-headline">стоимость:</legend>
-            <div>Место ползунка</div>
-            <div>
-              <label for="from">от</label>
-              <input type="text" name="от" id="from" value="0">
+            <legend class="filter-title">стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                width: 30%;
+                margin-left: 20%
+              "></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+              left: 20%
+            "></div>
+            <div class="toggle toggle-max" tabindex="0" style="
+              left: 50%
+            "></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="15000">
+                </label>
+              </div>
             </div>
-            <label for="to">до</label>
-            <input type="text" name="до" id="to" value="15000">
           </fieldset>
 
-          <fieldset class="range-form">
-            <legend class="filter-headline">сетка:</legend>
-            <div class="radio-button">
-              <input type="radio" value="Адаптивная" id="adaptive" checked>
+          <fieldset class="range-radio">
+            <legend class="filter-title">сетка:</legend>
+            <div class="filter-option filter-radio">
+              <input type="radio" class="visually-hidden filter-input-radio" value="Адаптивная" id="adaptive" checked>
               <label for="adaptive">Адаптивная</label>
             </div>
-            <div class="radio-button">
-              <input type="radio" value="Фиксированная" id="fixed">
+            <div class="filter-option filter-radio">
+              <input type="radio" class="visually-hidden filter-input-radio" value="Фиксированная" id="fixed">
               <label for="fixed">Фиксированная</label>
             </div>
-            <div class="radio-button">
-              <input type="radio" value="Резиновая" id="rubber-like">
+            <div class="filter-option filter-radio">
+              <input type="radio" class="visually-hidden filter-input-radio" value="Резиновая" id="rubber-like">
               <label for="rubber-like">Резиновая</label>
             </div>
           </fieldset>
-          <fieldset class="range-form">
-            <legend class="filter-headline">особенности:</legend>
-            <div>
-              <input type="checkbox" value="Слайдер" id="slider" checked>
+          <fieldset class="range-checkbox">
+            <legend class="filter-title">особенности:</legend>
+            <div class="filter-option filter-checkbox">
+              <input type="checkbox" class="visually-hidden filter-input-checkbox" value="Слайдер" id="slider" checked>
               <label for="slider">Слайдер</label>
             </div>
-            <div>
-              <input type="checkbox" value="Блок преимуществ" id="block">
+            <div class="filter-option filter-checkbox">
+              <input type="checkbox" class="visually-hidden filter-input-checkbox" value="Блок преимуществ" id="block">
               <label for="block">Блок преимуществ</label>
             </div>
-            <div>
-              <input type="checkbox" value="Новости" id="news" checked>
+            <div class="filter-option filter-checkbox">
+              <input type="checkbox" class="visually-hidden filter-input-checkbox" value="Новости" id="news" checked>
               <label for="news">Новости</label>
             </div>
-            <div>
-              <input type="checkbox" value="Галерея" id="gallery">
+            <div class="filter-option filter-checkbox">
+              <input type="checkbox" class="visually-hidden filter-input-checkbox" value="Галерея" id="gallery">
               <label for="gallery">Галерея</label>
             </div>
-            <div>
-              <input type="checkbox" value="Корзина" id="basket">
+            <div class="filter-option filter-checkbox">
+              <input type="checkbox" class="visually-hidden filter-input-checkbox" value="Корзина" id="basket">
               <label for="basket">Корзина</label>
             </div>
           </fieldset>
@@ -109,13 +126,15 @@
 
         <section class="product-catalog">
           <div class="sort-filter">
-            <p class="filter-headline">сортировать:</p>
+            <p class="filter-title">сортировать:</p>
             <ul class="position-filters">
               <li class="position-item"><a href="#.html">по цене</a></li>
               <li class="position-item"><a href="#.html">по типу</a></li>
               <li class="position-item"><a href="#.html">по названию</a></li>
-              <li class="position-item"><a href="#.html">вверх</a></li>
-              <li class="position-item"><a href="#.html">вниз</a></li>
+              <li class="position-item"><a href="#.html"><img src="/img/icon-down-dir.svg" alt="down-direction-button"
+                    height="11" width="12"></a></li>
+              <li class="position-item"><a href="#.html"><img src="/img/icon-up-dir.svg" alt="up-direction-button"
+                    height="11" width="12"></a></li>
             </ul>
           </div>
           <ul class="product-list">
@@ -124,10 +143,10 @@
               <a href="#.html">
                 <img src="img/img-sedona.jpg" width="359" height="578" alt="sedona-template">
               </a>
-              <div class="visually-hidden">
+              <div class="template-info">
                 <p class="item-name">sedona</p>
                 <p class="item-desc">Информационный сайт для туристов</p>
-                <button type="submit" value="9990">9990</button>
+                <button type="submit" class="btn template-btn" value="9990">9990₽</button>
               </div>
             </li>
             <li class="product-item">
@@ -135,10 +154,10 @@
               <a href="#.html">
                 <img src="img/img-pink.jpg" width="359" height="578" alt="Pink-template">
               </a>
-              <div class="visually-hidden">
+              <div class="template-info">
                 <p class="item-name">Pink app</p>
-                <p class="item-desc">Продуктовый лендингприложения для iOS и Android</p>
-                <button type="submit" value="9990">9990</button>
+                <p class="item-desc">Продуктовый лендинг<br>приложения для iOS и Android</p>
+                <button type="submit" class="btn template-btn" value="9990">9990₽</button>
               </div>
             </li>
             <li class="product-item">
@@ -146,10 +165,10 @@
               <a href="#.html">
                 <img src="img/img-barbershop.jpg" width="359" height="578" alt="Barbershop-template">
               </a>
-              <div class="visually-hidden">
+              <div class="template-info">
                 <p class="item-name">Barbershop</p>
                 <p class="item-desc">Сайт салона красоты.Для мужчин, да.</p>
-                <button type="submit" value="9990">9990</button>
+                <button type="submit" class="btn template-btn" value="9990">9990₽</button>
               </div>
             </li>
             <li class="product-item">
@@ -157,10 +176,10 @@
               <a href="#.html">
                 <img src="img/img-mishka.jpg" width="359" height="578" alt="Mishka-template">
               </a>
-              <div class="visually-hidden">
+              <div class="template-info">
                 <p class="item-name">Mishka</p>
                 <p class="item-desc">Интернет-магазин вязаных игрушек</p>
-                <button type="submit" value="9990">9990</button>
+                <button type="submit" class="btn template-btn" value="9990">9990₽</button>
               </div>
             </li>
             <li class="product-item">
@@ -168,10 +187,10 @@
               <a href="#.html">
                 <img src="img/img-aplus.jpg" width="359" height="578" alt="a_plus-template">
               </a>
-              <div class="visually-hidden">
+              <div class="template-info visually-hidden">
                 <p class="item-name">A Plus</p>
                 <p class="item-desc">Лендинг курсов повышения квалификации</p>
-                <button type="submit" value="9990">9990</button>
+                <button type="submit" class="btn template-btn" value="9990">9990₽</button>
               </div>
             </li>
             <li class="product-item">
@@ -179,10 +198,10 @@
               <a href="#.html">
                 <img src="img/img-kvast.jpg" width="359" height="578" alt="kvast-template">
               </a>
-              <div class="visually-hidden">
+              <div class="template-info visually-hidden">
                 <p class="item-name">A Plus</p>
                 <p class="item-desc">Промо-сайт производителякрафтового кваса</p>
-                <button type="submit" value="9990">9990</button>
+                <button type="submit" class="btn template-btn" value="9990">9990₽</button>
               </div>
             </li>
           </ul>
