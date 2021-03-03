@@ -133,7 +133,16 @@ main {
 }
 
 .visually-hidden {
-  display:none
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 /* grid */
 
@@ -332,8 +341,8 @@ main {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--range-center);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
@@ -602,8 +611,39 @@ main {
   transform: translateX(536px) translateY(-96px);
   width: 88px;
   height: 18px;
-
+  position: relative;
 }
+
+.switch-btn {
+  display: block;
+  cursor: pointer;
+  margin-right: 17px;
+}
+
+.switch-btn:last-child {
+  margin-right: 0;
+}
+
+.switch-btn::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  top: 0;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.switch-btn:checked::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  top: -5px;
+  background-image: url("/img/button-bullet.png");
+}
+
+
 .slider-btn {
   background-color: var(--button-red);
   color: var(--basic-white);
@@ -617,6 +657,8 @@ main {
 .slider-btn:active {
   background-color: var(--push-red);
 }
+
+
 
 /* What we can */
 
