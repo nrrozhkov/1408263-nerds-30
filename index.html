@@ -45,7 +45,7 @@
     <section class="main-slider-background">
       <div class="container">
         <ul class="main-slider">
-          <li class="slide">
+          <li class="slide slider-item slide-current">
             <h3>Долго, дорого, <br>
               скурпулёзно.</h3>
             <p>Математически выверенный дизайн<br>
@@ -53,7 +53,7 @@
             <button class="btn slider-btn">узнать больше</button>
             <img class="slide-img" src="img/nerds-index-slide1.png" alt="banner-picture1" width="760" height="431">
           </li>
-          <li class="slide hidden">
+          <li class="slide slider-item">
             <h3>Любим математику <br>
               как никто другой</h3>
             <p>Никакого креатива, только математические формулы<br>
@@ -61,7 +61,7 @@
             <button class="btn slider-btn">узнать больше</button>
             <img src="img/nerds-index-slide2.png" alt="banner-picture2" width="760" height="431">
           </li>
-          <li class="slide hidden">
+          <li class="slide slider-item">
             <h3>Только ночь,<br>
               только хардкор</h3>
             <p>Работать днем, как все? Мы против этого.<br>
@@ -71,9 +71,9 @@
           </li>
         </ul>
         <div class="slide-switch">
-          <input type="radio" value="slide-1" class="switch-btn visually-hidden">
-          <input type="radio" value="slide-2" class="switch-btn visually-hidden">
-          <input type="radio" value="slide-3" class="switch-btn visually-hidden">
+          <button type="button" aria-label="Первый слайд" class="current"></button>
+          <button type="button" aria-label="Второй слайд"></button>
+          <button type="button" aria-label="Третий слайд"></button>
         </div>
 
       </div>
