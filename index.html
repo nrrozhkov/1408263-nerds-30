@@ -198,32 +198,24 @@
       </div>
     </div>
   </footer>
-  <section class="pop-up">
-    <div class="container">
-      <div class="popup-container">
-        <div class="popup-title">
+  <section class="pop-up modal visually-hidden">
           <h3>Напишите нам</h3>
-          <a href="#" class="cross-btn"><img src="img/close-cross.png" alt="close-cross" width="21" height="21"></a>
-        </div>
-        <div class="form-list">
-          <form class="contact-form" action="#" method="post">
-            <p class="form-item">
+          <form class="popup-form" action="#" method="post">
+            <p class="popup-name">
               <label for="name">Ваше имя:</label>
               <input type="text" id="name" name="name" placeholder="Имя Фамилия">
             </p>
-            <p class="form-item">
+            <p class="popup-email">
               <label for="email">Ваш email:</label>
-              <input id="email" type="text" name="email" placeholder="email@example.com">
+              <input id="email" type="email" name="email" placeholder="email@example.com">
             </p>
-            <p class="form-item">
+            <p class="popup-message">
               <label for="message">Текст письма:</label>
               <input type="text" id="message" name="customer-message" placeholder="В свободной форме">
             </p>
+            <button class="btn popup-button">отправить</button>
           </form>
-        </div>
-        <button class="btn popup-button">отправить</button>
-      </div>
-    </div>
+          <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 
