@@ -223,7 +223,6 @@ main {
   list-style: none;
 }
 
-
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-black);
@@ -236,8 +235,8 @@ main {
 .user-navigation .basket {
   position: relative;
   padding-left: 40px;
-
 }
+
 .basket::before {
     content: "";
     position: absolute;
@@ -248,7 +247,6 @@ main {
     background-image: url("../img/cart-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-
 }
 /* Buttons */
 
@@ -402,6 +400,10 @@ main {
   line-height: 30px;
   text-transform: uppercase;
   margin-top: 0;
+}
+
+.sort-filter .filter-title {
+  margin-bottom: 48px;
 }
 
 .sort-filter {
@@ -975,6 +977,8 @@ margin-top: 39px;
   line-height: 18px;
   text-align: center;
   margin: 0;
+  margin-left: 52px;
+  width: 255px;
   color: var(--map-gray);
 }
 
