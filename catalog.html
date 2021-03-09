@@ -85,15 +85,15 @@
           <fieldset class="range-radio">
             <legend class="filter-title">сетка:</legend>
             <div class="filter-option filter-radio">
-              <input type="radio" class="visually-hidden filter-input-radio" value="Адаптивная" id="adaptive" checked>
+              <input class="visually-hidden filter-input-radio" type="radio" name="Адаптивная" id="adaptive" checked>
               <label for="adaptive">Адаптивная</label>
             </div>
             <div class="filter-option filter-radio">
-              <input type="radio" class="visually-hidden filter-input-radio" value="Фиксированная" id="fixed">
+              <input type="radio" class="visually-hidden filter-input-radio" name="Фиксированная" id="fixed">
               <label for="fixed">Фиксированная</label>
             </div>
             <div class="filter-option filter-radio">
-              <input type="radio" class="visually-hidden filter-input-radio" value="Резиновая" id="rubber-like">
+              <input type="radio" class="visually-hidden filter-input-radio" name="Резиновая" id="rubber-like">
               <label for="rubber-like">Резиновая</label>
             </div>
           </fieldset>
@@ -247,13 +247,11 @@
   <footer class="main-footer">
     <div class="container">
       <div class="footer-wrapper">
-        <div class="footer-social">
-          <ul class="footer-social">
-            <li><a class="social-button" href="#">vk</a></li>
-            <li><a class="social-button" href="#">fb</a></li>
-            <li><a class="social-button" href="#">inst</a></li>
-          </ul>
-        </div>
+        <ul class="footer-social">
+          <li class="social-vk"><a href="#"><img class="vk" src="/img/vk-icon.svg" alt="vk-link"></a></li>
+          <li class="social-fb"><a href="#"><img class="fb" src="/img/fb-icon.svg" alt="facebook-link"></a></li>
+          <li class="social-inst"><a href="#"><img class="inst" src="/img/inst-icon.svg" alt="instagram-link"></a></li>
+        </ul>
         <div class="footer-title">
           <p class="head">Давайте дружить, это выгодно!</p>
           <p class="subtitle">Скидка 10% для друзей из социальных сетей.</p>
