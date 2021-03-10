@@ -1175,7 +1175,7 @@ position: relative;
   padding: 0;
 }
 
-.footer-social li:first-child {
+.footer-social {
   margin-left: 140px;
 }
 
@@ -1213,38 +1213,31 @@ position: relative;
   background-color: var(--focus-red);
 }
 
-.social-vk:active {
-  background-image: linear-gradient(0deg, var(--push-red), var(--push-red)), var(--basic-white);
+.social-vk:active .vk {
+  background-color: var(--push-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-}
-
-.vk:active {
   opacity: 0.3;
 }
+
 
 .social-fb:hover {
   background-color: var(--focus-red);
 }
 
-.social-fb:active {
-  background-image: linear-gradient(0deg, var(--push-red), var(--push-red)), var(--basic-white);
+.social-fb:active .fb {
+  background-color: var(--push-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-}
-
-.fb:active {
   opacity: 0.3;
 }
+
 
 .social-inst:hover {
   background-color: var(--focus-red);
 }
 
-.social-inst:active {
-  background-image: linear-gradient(0deg, var(--push-red), var(--push-red)), var(--basic-white);
+.social-inst:active .inst {
+  background-color: var(--push-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-}
-
-.inst:active {
   opacity: 0.3;
 }
 
@@ -1403,7 +1396,6 @@ position: relative;
 .popup-form input:focus {
   border-color: var(--basic-black);
 }
-
 
 .popup-form input:invalid {
   border-color: var(--focus-red);
