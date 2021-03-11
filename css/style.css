@@ -273,7 +273,7 @@ main {
 }
 
 .active-page {
-  border-bottom: 1px solid var(--button-red);
+  border-bottom: 2px solid var(--button-red);
 }
 
 .page-title h1{
@@ -658,9 +658,15 @@ main {
 
 }
 
+.slider-btn:hover {
+  background-color: var(--push-red);
+}
+
 .slider-btn:active {
   background-color: var(--push-red);
 }
+
+
 
 
 
@@ -1084,9 +1090,6 @@ margin-top: 39px;
   position: relative;
 }
 
-.map-wrapper {
-
-}
 .contacts-block {
   position: absolute;
   content: "";
@@ -1124,7 +1127,6 @@ margin-top: 39px;
   content: "";
   left: 822px;
   top: 86px;
-  z-index: 2;
   width: 231px;
   height: 190px;
 }
@@ -1177,6 +1179,10 @@ position: relative;
 
 .footer-social {
   margin-left: 140px;
+}
+
+.footer-social li:first-child  {
+  margin-left: 0;
 }
 
 .social-vk,
@@ -1257,6 +1263,7 @@ position: relative;
   color: var(--basic-black);
   background-color: var(--basic-white);
   box-sizing: padding-box;
+  display: none;
 }
 
 .popup-login {
@@ -1271,6 +1278,15 @@ position: relative;
   padding: 63px 99px 84px 100px;
   box-sizing: padding-box;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.popup-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.popup-error {
+  animation: shake 0.6s;
 }
 
 .pop-up h3 {
@@ -1376,17 +1392,21 @@ position: relative;
   border: 0;
   cursor: pointer;
   opacity: 0.3;
+  border: none;
 }
 
 .modal-close:focus {
+  border: none;
   opacity: 1;
 }
 
 .popup-button:hover {
   background-color: var(--focus-red);
+  border: none;
 }
 .popup-button:focus {
   background-color: var(--push-red);
+  border: none;
 }
 
 .popup-form input:hover {
@@ -1399,5 +1419,47 @@ position: relative;
 
 .popup-form input:invalid {
   border-color: var(--focus-red);
-  color: var(--focus-red);
+  -webkit-input-placeholder: var(--focus-red);
+  -moz-placeholder: var(--focus-red);
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

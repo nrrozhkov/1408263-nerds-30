@@ -14,7 +14,7 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page-body">
+< class="page-body">
   <header class="main-header">
     <div class="container">
       <nav class="main-navigation">
@@ -259,6 +259,27 @@
       </div>
     </div>
   </footer>
+  <section class="pop-up modal">
+    <h3>Напишите нам</h3>
+    <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
+      <p class="popup-name">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="popup-email">
+        <label for="email">Ваш email:</label>
+        <input id="email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p class="popup-message">
+        <label for="message">Текст письма:</label>
+        <input type="text" id="message" name="customer-message" placeholder="В свободной форме">
+      </p>
+      <button class="btn popup-button">отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+  <script src="popup.js"></script>
+  <script src="underline.js"></script>
 </body>
 
 </html>
