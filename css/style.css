@@ -457,6 +457,7 @@ main {
   left: -36px;
 }
 
+
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
@@ -467,6 +468,11 @@ main {
   height: 9px;
   background-color: var(--filter-buttons);
   opacity: 0.4;
+}
+
+.filter-input-radio:checked:hover + label::after,
+.filter-input-radio:hover + label::before {
+  opacity: 1;
 }
 
 
@@ -497,12 +503,16 @@ main {
   opacity: 0.3;
 }
 
-.radio-button label:hover {
-	color: var(--filter-buttons);
+.filter-input-checkbox:checked:hover + label::after,
+.filter-input-checkbox:hover + label::before {
+  opacity: 1;
 }
+
 .radio-button label:disabled {
 	filter: grayscale(100%);
 }
+
+
 .filter-button {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 500;
@@ -866,6 +876,7 @@ margin-top: 39px;
 /* Brands slider */
 .brands-list {
   border-top: 2px solid var(--header-gray);
+  margin: 0;
 }
 
 .brands-list li {
@@ -1087,14 +1098,16 @@ margin-top: 39px;
 /* Map */
 .contacts {
   margin-top: 80px;
+}
+.contacts .container {
   position: relative;
 }
 
 .contacts-block {
   position: absolute;
   content: "";
-  top: 54px;
-
+  bottom: 54px;
+  left: 140px;
   background-color: var(--basic-white);
   padding: 49px 50px 47px 50px;
   margin: 0;
@@ -1126,7 +1139,7 @@ margin-top: 39px;
   position: absolute;
   content: "";
   left: 822px;
-  top: 86px;
+  bottom: 86px;
   width: 231px;
   height: 190px;
 }
@@ -1136,6 +1149,7 @@ margin-top: 39px;
 .btn-map:active {
   background-color: var(--push-red);
 }
+
 /* Footer */
 
 .main-footer {
@@ -1419,8 +1433,7 @@ position: relative;
 
 .popup-form input:invalid {
   border-color: var(--focus-red);
-  -webkit-input-placeholder: var(--focus-red);
-  -moz-placeholder: var(--focus-red);
+  color: var(--focus-red);
 }
 
 /* Animations */
