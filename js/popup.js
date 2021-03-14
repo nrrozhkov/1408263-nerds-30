@@ -9,13 +9,20 @@ const button = document.querySelector('.btn-map');
   let isStorageSupport = true;
   let storage = "";
 
+// Slide-change
+
+
+
+
+
+// Local-storage check
   try {
     storage = localStorage.getItem("name");
   } catch (err) {
   isStorageSupport = false;
   }
 
-
+// Popup
   button.addEventListener('click', function (evt) {
     evt.preventDefault();
     popup.classList.add('popup-show');
@@ -29,12 +36,14 @@ const button = document.querySelector('.btn-map');
   }
   });
 
+// Pop-up close
   close.addEventListener('click', function (evt) {
     evt.preventDefault();
     popup.classList.remove('popup-show');
     popup.classList.remove("popup-error");
   })
 
+// Pop-up form check
   popupForm.addEventListener("submit", function (evt) {
     if (!name.value || !email.value) {
     evt.preventDefault();
@@ -49,6 +58,7 @@ const button = document.querySelector('.btn-map');
 }
   });
 
+// Pop-up esc close
   window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (popup.classList.contains("popup-show")) {
@@ -58,3 +68,4 @@ const button = document.querySelector('.btn-map');
     }
   }
 });
+
