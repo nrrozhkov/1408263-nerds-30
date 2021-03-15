@@ -190,7 +190,7 @@ main {
 
 /* Container */
 .container {
-  width: 1157px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -203,10 +203,11 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 48px;
+  margin-top: 57px;
 }
 
 .main-navigation-wrapper {
+  height: 431px;
   width: 100%;
   background-color: var(--header-gray);
 }
@@ -214,6 +215,8 @@ main {
 .main-header-logo {
   width: 160px;
   height: 66px;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation {
@@ -221,27 +224,35 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
+  margin: 0;
+  padding-bottom: 9px;
 }
 
-.site-navigation a,
-.user-navigation a {
+.site-navigation {
+  padding: 0;
+}
+
+.site-navigation li {
   color: var(--basic-black);
   display: block;
-  margin-left: 45px;
+  margin: 0;
+  margin-right: 45px;
 }
 
 /* User-navigation */
 
 .user-navigation .basket {
   position: relative;
-  padding-left: 40px;
+  margin-left: 40px;
+  left: 10px;
+
 }
 
 .basket::before {
     content: "";
     position: absolute;
     right: 100px;
-    top: 7px;
+    top: 3px;
     width: 15px;
     height: 15px;
     background-image: url("../img/cart-icon.svg");
@@ -586,6 +597,7 @@ main {
 }
 .main-slider-background .container {
   position: relative;
+  height: 431px;
 }
 
 .main-slider {
@@ -594,6 +606,12 @@ main {
   list-style: none;
   margin:0;
   padding: 0;
+  width: 1157px;
+  height: 431px;
+}
+
+.main-slider li {
+  height: 431px;
 }
 .slide {
   display: none;
@@ -612,7 +630,8 @@ main {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 78px;
+  top: 70px;
+  left: -10px;
 }
 
 .slide p {
@@ -622,20 +641,21 @@ main {
   line-height: 24px;
   color: var(--font-black);
   position:absolute;
-  top: 214px;
+  top: 205px;
+  left: -10px;
   margin: 0;
   padding: 0;
 }
 
 .slide img {
-  transform: translateX(397px) translateY(5px);
+  transform: translateX(387px) translateY(-9px);
 }
 
 .slide-switch {
   position: absolute;
   content: "";
-  bottom: 96px;
-  right: 533px;
+  bottom: 105px;
+  right: 536px;
   display: flex;
   width: 88px;
   justify-content: space-between;
@@ -662,7 +682,8 @@ main {
   background-color: var(--button-red);
   color: var(--basic-white);
   position: absolute;
-  top: 301px;
+  top: 290px;
+  left: -5px;
   padding-left: 54px;
   padding-right: 54px;
 
