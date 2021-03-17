@@ -9,12 +9,6 @@ const button = document.querySelector('.btn-map');
   let isStorageSupport = true;
   let storage = "";
 
-// Slide-change
-
-
-
-
-
 // Local-storage check
   try {
     storage = localStorage.getItem("name");
