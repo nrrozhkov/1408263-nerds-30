@@ -127,6 +127,7 @@ main {
   padding-top: 17px;
   padding-bottom: 15px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 
@@ -197,13 +198,12 @@ main {
   position:absolute;
   content: "";
   top: -9px;
-  left: -10px;
   z-index: 3;
 }
 
 /* Container */
 .container {
-  width: 1160px;
+  width: 1180px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -251,6 +251,7 @@ main {
   display: block;
   margin: 0;
   margin-right: 45px;
+  cursor: pointer;
 }
 
 /* User-navigation */
@@ -258,8 +259,7 @@ main {
 .user-navigation .basket {
   position: relative;
   margin-left: 40px;
-  left: 10px;
-
+  cursor: pointer;
 }
 
 .basket::before {
@@ -277,6 +277,10 @@ main {
 
 .main-header-logo svg:active {
   fill: var(--up-down);
+}
+
+.main-header-logo svg:hover {
+  opacity: 1;
 }
 
 .basket,
@@ -406,7 +410,7 @@ main {
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
-
+  cursor: pointer;
   font-family: inherit;
   font-size: inherit;
 }
@@ -488,6 +492,7 @@ main {
   border-radius: 50%;
   top: -3px;
   left: -36px;
+  cursor: pointer;
 }
 
 
@@ -508,6 +513,13 @@ main {
   opacity: 1;
 }
 
+.filter-input-radio:checked:disabled + label::after,
+.filter-input-radio:disabled + label::before {
+  opacity: 0.3;
+  color: var(--font-black);
+  background-color: var(--font-black);
+}
+
 
 .filter-input-checkbox + label::before {
   content: "";
@@ -520,7 +532,7 @@ main {
   border: 2px solid var(--filter-buttons);
   opacity: 0.3;
   border-radius: 15%;
-
+  cursor: pointer;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -541,8 +553,11 @@ main {
   opacity: 1;
 }
 
-.radio-button label:disabled {
-	filter: grayscale(100%);
+.filter-input-checkbox:checked:disabled + label::after,
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0.3;
+  color: var(--font-black);
+  background-color: var(--font-black);
 }
 
 
@@ -574,6 +589,7 @@ main {
   padding-top: 10px;
   position: relative;
   margin-right: 25px;
+  cursor: pointer;
 }
 
 .position-item:nth-child(3) {
@@ -654,7 +670,6 @@ main {
   padding: 0;
   position: absolute;
   top: 77px;
-  left: -10px;
 }
 
 .slide p {
@@ -665,23 +680,23 @@ main {
   color: var(--font-black);
   position:absolute;
   top: 213px;
-  left: -10px;
   margin: 0;
   padding: 0;
 }
 
 .slide img {
-  transform: translateX(387px) translateY(0px);
+  transform: translateX(397px) translateY(0px);
 }
 
 .slide-switch {
   position: absolute;
   content: "";
   bottom: 95px;
-  right: 536px;
+  right: 548px;
   display: flex;
   width: 88px;
   justify-content: space-between;
+
 }
 
 .slide-switch button {
@@ -706,7 +721,6 @@ main {
   color: var(--basic-white);
   position: absolute;
   top: 300px;
-  left: -10px;
   padding-left: 54px;
   padding-right: 54px;
 
@@ -736,9 +750,6 @@ main {
   list-style: none;
 }
 
-.features .container {
-  padding-left: 0;
-}
 
 .feature-item h3 {
   font-family: "Roboto", Arial, sans-serif;
@@ -816,7 +827,6 @@ main {
   margin-top: 81px;
   margin-bottom: 50px;
   border-top: 2px solid var(--header-gray);
-  padding-left: 0;
 }
 .about-company {
   font-family: "Roboto", Arial, sans-serif;
@@ -963,34 +973,35 @@ margin-top: 35px;
 .brands-list li {
   margin-top: 55px;
   position: relative;
+  cursor: pointer;
 }
 
 .brand-item .html-logo {
   position: absolute;
   content: "";
   top: 10px;
-  left: 21px;
+  left: 31px;
 }
 
 .brand-item .borodinski-logo {
   position: absolute;
   content: "";
   top: -10px;
-  left: 18px;
+  left: 28px;
 }
 
 .brand-item .pink-logo {
   position: absolute;
   content: "";
   top: 10px;
-  left: 33px;
+  left: 43px;
 }
 
 .brand-item .mishka-logo {
   position: absolute;
   content: "";
   top: 0;
-  left: 41px;
+  left: 51px;
 }
 
 .brand-item a {
@@ -1023,10 +1034,6 @@ margin-top: 35px;
 }
 
 /* Products */
-
-.product-sort > .container {
-  padding-left: 0;
-}
 
 .product-list {
   width: 760px;
@@ -1166,6 +1173,7 @@ margin-top: 35px;
 
 .pagination-item {
   margin-right: 11px;
+  cursor: pointer;
 }
 
 .pagination-item a{
@@ -1186,6 +1194,13 @@ margin-top: 35px;
   padding: 14px 17px 12px 17px;
   border: 3px solid var(--active-border);
 }
+
+.first-page a {
+  background-color: var(--basic-white);
+  padding: 14px 17px 12px 17px;
+  border: 3px solid var(--active-border);
+}
+
 .pagination-item a:focus{
   background-color: var(--push-gray);
 }
@@ -1223,6 +1238,7 @@ margin-top: 35px;
 .iframe_map {
   width: 100%;
   height: 416px;
+  cursor: pointer;
 }
 
 .contacts {
@@ -1239,7 +1255,7 @@ margin-top: 35px;
   width: 319px;
   height: 308px;
   bottom: 59px;
-  left: 1px;
+  left: 10px;
   background-color: var(--basic-white);
   padding: 49px 50px 47px 50px;
   margin: 0;
@@ -1325,10 +1341,6 @@ position: relative;
   padding: 0;
 }
 
-.footer-social li:first-child  {
-  margin-left: 0;
-}
-
 .social-vk,
 .social-fb,
 .social-inst {
@@ -1339,6 +1351,12 @@ position: relative;
   height: 81px;
   border-radius: 50%;
   background-color: var(--social-button);
+  cursor: pointer;
+}
+
+.social-link:active{
+  background-color: var(--push-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .social-vk a {
@@ -1364,9 +1382,8 @@ position: relative;
 }
 
 .social-vk:active .vk {
-  background-color: var(--push-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  opacity: 0.3;
+  /* background-color: var(--push-red); */
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
 }
 
 
@@ -1374,10 +1391,9 @@ position: relative;
   background-color: var(--focus-red);
 }
 
-.social-fb:active .fb {
+.social-fb:active  {
   background-color: var(--push-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  opacity: 0.3;
 }
 
 
@@ -1388,7 +1404,6 @@ position: relative;
 .social-inst:active .inst {
   background-color: var(--push-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  opacity: 0.3;
 }
 
 .footer-title {
@@ -1408,12 +1423,6 @@ position: relative;
   background-color: var(--basic-white);
   box-sizing: padding-box;
   display: none;
-}
-
-.popup-login {
-  top: 1769px;
-  bottom: auto;
-  width: 761px;
 }
 
 .pop-up {
@@ -1464,6 +1473,7 @@ position: relative;
   font: inherit;
   color: var(--ten-percent);
   border: 2px solid var(--border-frame);
+  cursor: pointer;
 }
 
 .popup-message input {
@@ -1473,6 +1483,7 @@ position: relative;
   font: inherit;
   color: var(--ten-percent);
   border: 2px solid var(--border-frame);
+  cursor: pointer;
 }
 
 .popup-form {
