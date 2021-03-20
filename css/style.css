@@ -542,7 +542,7 @@ main {
   left: -32px;
   width: 21px;
   height: 17px;
-  background-image: url("/img/check-v.svg");
+  background-image: url("./img/check-v.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -710,7 +710,7 @@ main {
 }
 
 .slide-switch .current {
-  background-image: url("/img/button-bullet.png");
+  background-image: url("./img/button-bullet.png");
   background-position: 5px 5px;
   background-repeat: no-repeat;
 }
@@ -964,7 +964,7 @@ margin-top: 35px;
   border-top: 2px solid var(--header-gray);
   margin: 0;
   display: grid;
-  grid-template-columns: 298px 298px 298px 298px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 93px;
   list-style: none;
   padding: 0;
@@ -980,7 +980,7 @@ margin-top: 35px;
   position: absolute;
   content: "";
   top: 10px;
-  left: 31px;
+  left: 36px;
 }
 
 .brand-item .borodinski-logo {
@@ -994,14 +994,14 @@ margin-top: 35px;
   position: absolute;
   content: "";
   top: 10px;
-  left: 43px;
+  left: 60px;
 }
 
 .brand-item .mishka-logo {
   position: absolute;
   content: "";
   top: 0;
-  left: 51px;
+  left: 75px;
 }
 
 .brand-item a {
@@ -1060,7 +1060,7 @@ margin-top: 35px;
   width: 360px;
   height: 40px;
   top: 0;
-  background-image: url("/img/browser.png");
+  background-image: url("./img/browser.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   opacity: 0.12;
