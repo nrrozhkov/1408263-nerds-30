@@ -303,10 +303,6 @@ main {
 .active-page {
   padding-bottom: 12px;
   border-bottom: 2px solid var(--button-red);
-
-  &:hover {
-    border-color: red
-}
 }
 
 
