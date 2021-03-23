@@ -736,7 +736,7 @@ main {
   background-color: var(--push-red);
 }
 
-.slider-btn:focus {
+.slider-btn:active {
   background-color: var(--focus-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
